@@ -1,0 +1,73 @@
+body{
+  background-color: rgb(49, 49, 49);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+h2{
+
+  color: white;
+  font-size: 60px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.header{
+  text-align: center;
+}
+
+.btn{
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 30px;
+  transition-duration: 1s;
+
+}
+.btn:hover{
+  background-color: #666;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+/*class to hide elements */
+.hidden{
+  display: none;
+}
+
+/* game board table */
+
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 3px rgb(255, 255, 255);
+}
+#board{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  /* TODO: make into circles */
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 100%;
+}
+
+.player-1{
+  background-color: rgb(27, 27, 202);
+}
+.player-2{
+  background-color: rgb(204, 48, 28);
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: gold;
+}
